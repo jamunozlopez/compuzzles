@@ -1,0 +1,101 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Cabecera */
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    color: #333;
+}
+
+header h2 {
+    font-size: 1.2em;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Controles */
+#controls {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#controls > * {
+    margin: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+select, input[type="file"] {
+    padding: 5px;
+    font-size: 1em;
+}
+
+/* Mensajes */
+#message-box {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Canvas */
+canvas {
+    border: 1px solid #333;
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* Imagen de muestra */
+#original-preview {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+#original-preview.hidden {
+    display: none;
+}
+
+#original-preview canvas {
+    border: 1px solid #666;
+    margin: 0 auto;
+}
+
+/* Contador */
+#misplaced-count {
+    font-weight: bold;
+    color: #d9534f;
+    margin-left: 10px;
+}
